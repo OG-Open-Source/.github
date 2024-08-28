@@ -9,7 +9,7 @@
 
 This repository was added with the permission of the original author.
 
-© [2024] [OG|OS - OGATA Open Source](https://github.com/OG-Open-Source). All rights reserved.
+© 2024 [OGOS - OGATA Open Source](https://github.com/OG-Open-Source). All rights reserved.
 
 ---
 
@@ -23,7 +23,7 @@ This repository was added with the permission of the original author.
 
 ## Introduction
 
-OG|OS - OGATA Open Source is dedicated to developing and sharing open-source software. Our goal is to create and maintain high-quality, community-driven projects that benefit developers and users worldwide.
+OGOS - OGATA Open Source is dedicated to developing and sharing open-source software. Our goal is to create and maintain high-quality, community-driven projects that benefit developers and users worldwide.
 
 ## Disclaimer
 
