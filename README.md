@@ -14,11 +14,12 @@ This repository was added with the permission of the original author.
 © 2024 [OGOS - OGATA Open Source](https://github.com/OG-Open-Source). All rights reserved.
 
 ---
-<!--
-## Usage
 
+## Usage
+<!--
 ```bash
 <code>
+```
 -->
 ---
 
