@@ -1,3 +1,5 @@
+<!-- You can only change the [Year] and [Original Author Name] in the copyright statement. -->
+
 # OG|OS - OGATA Open Source
 
 ## License
