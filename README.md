@@ -14,17 +14,20 @@ This repository was added with the permission of the original author.
 © 2024 [OGOS - OGATA Open Source](https://github.com/OG-Open-Source). All rights reserved.
 
 ---
-
+<!--
 ## Usage
 
-<!--
 ```bash
 <code>
 -->
-
 ---
 
-## Changelog
+## Changelog - OG-Open-Source
+
+### [1.0.0] - 2024-08-28
+- Initial release of the project
+
+## Changelog - Original-Author
 
 ### [1.0.0] - 2024-08-28
 - Initial release of the project
