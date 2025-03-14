@@ -1,6 +1,6 @@
 <!-- You cannot delete 3 items in the part of the table of contents, Introduction, Contributing, License -->
 
-# OG|OS - OGATA Open Source
+# OG-Open-Source
 
 This repository serves as an example of a good README.md.
 
@@ -17,7 +17,7 @@ This repository serves as an example of a good README.md.
 
 ## Introduction
 
-OGOS - OGATA Open Source is committed to developing and sharing innovative open-source software. Our mission is to build and sustain high-quality, community-driven projects that empower developers and users worldwide.
+OG-Open-Source is committed to developing and sharing innovative open-source software. Our mission is to build and sustain high-quality, community-driven projects that empower developers and users worldwide.
 
 <!-- You can add more sections here -->
 
