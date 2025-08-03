@@ -1,4 +1,4 @@
-<!-- You cannot delete 3 items in the part of the table of contents, Introduction, Contributing, License -->
+<!-- You cannot delete 4 items in the part of the table of contents, Introduction, Contributors, Contributing, License -->
 
 # OG-Open-Source
 
@@ -10,6 +10,7 @@ This repository serves as an example of a good README.md.
 
 - [Introduction](#introduction)
 <!-- You can add more sections here -->
+- [Contributors](#contributors)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -20,6 +21,12 @@ This repository serves as an example of a good README.md.
 OG-Open-Source is committed to developing and sharing innovative open-source software. Our mission is to build and sustain high-quality, community-driven projects that empower developers and users worldwide.
 
 <!-- You can add more sections here -->
+
+## Contributors
+
+<a href="https://github.com/OG-Open-Source/.github/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=OG-Open-Source/.github" />
+</a>
 
 ## Contributing
 
