@@ -47,7 +47,7 @@ This project utilizes external components or code whose copyright and licensing 
 
 | Component Name                    | Source / Author | License Type | Location of License Document     | Hash Values                      |
 | :-------------------------------- | :-------------- | :----------- | :------------------------------- | -------------------------------- |
-| OG-Open-Source README.md Template | OG-Open-Source  | MIT          | /licenses/OG-Open-Source/LICENSE | 37f9abfafb28f5360c4cb4c737ebcb03 |
+| OG-Open-Source README.md Template | OG-Open-Source  | MIT          | /licenses/OG-Open-Source/LICENSE | 120aee1912f4c2c51937f4ea3c449954 |
 
 <!-- All third-party license documents are preserved in their original form and located in the project's `/licenses` directory. Users are required to verify document integrity using the provided MD5 hash against the file at the specified location. -->
 
