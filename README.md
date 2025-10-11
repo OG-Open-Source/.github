@@ -8,11 +8,11 @@ This repository serves as an example of a good README.md.
 
 ## Table of Contents
 
-- [Introduction](#introduction)
+-   [Introduction](#introduction)
 <!-- You can add more sections here -->
-- [Contributors](#contributors)
-- [Contributing](#contributing)
-- [License](#license)
+-   [Contributors](#contributors)
+-   [Contributing](#contributing)
+-   [License](#license)
 
 ---
 
@@ -37,19 +37,19 @@ OG-Open-Source is committed to developing and sharing innovative open-source sof
 
 ## License
 
-<!-- This repository is licensed under the [Apache License 2.0](https://opensource.org/license/Apache-2-0). -->
-<!-- This repository is licensed under the [GNU General Public License v3.0](https://opensource.org/license/GPL-3-0). -->
-This repository is licensed under the [MIT License](https://opensource.org/license/MIT).
-<!-- This repository is licensed under the [BSD 2-Clause License](https://opensource.org/license/BSD-2-Clause). -->
-<!-- This repository is licensed under the [BSD 3-Clause License](https://opensource.org/license/BSD-3-Clause). -->
-<!-- This repository is licensed under the [Boost Software License 1.0](https://opensource.org/license/BSL-1-0). -->
-<!-- This repository is licensed under the Creative Commons Zero v1.0 Universal. -->
-<!-- This repository is licensed under the [Eclipse Public License 2.0(https://opensource.org/license/EPL-2-0). -->
-<!-- This repository is licensed under the [GNU Affero General Public License v3.0](https://opensource.org/license/AGPL-v3). -->
-<!-- This repository is licensed under the [GNU General Public License v2.0](https://opensource.org/license/GPL-2-0). -->
-<!-- This repository is licensed under the [GNU Lesser General Public License v2.1](https://opensource.org/license/LGPL-2-1). -->
-<!-- This repository is licensed under the [Mozilla Public License 2.0](https://opensource.org/license/MPL-2-0). -->
-<!-- This repository is licensed under the [The Unlicense](https://opensource.org/license/Unlicense). -->
+### Primary Project License
+
+The main source code and documentation in this repository are licensed under the [MIT License](https://opensource.org/license/MIT).
+
+### Third-Party Components and Attributions
+
+This project utilizes external components or code whose copyright and licensing requirements must be separately adhered to:
+
+| Component Name                    | Source / Author | License Type | Location of License Document     | Hash Values                      |
+| :-------------------------------- | :-------------- | :----------- | :------------------------------- | -------------------------------- |
+| OG-Open-Source README.md Template | OG-Open-Source  | MIT          | /licenses/OG-Open-Source/LICENSE | 37f9abfafb28f5360c4cb4c737ebcb03 |
+
+<!-- All third-party license documents are preserved in their original form and located in the project's `/licenses` directory. Users are required to verify document integrity using the provided MD5 hash against the file at the specified location. -->
 
 ---
 
