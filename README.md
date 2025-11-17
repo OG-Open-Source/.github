@@ -8,11 +8,11 @@ This repository serves as an example of a good README.md.
 
 ## Table of Contents
 
--   [Introduction](#introduction)
+- [Introduction](#introduction)
 <!-- You can add more sections here -->
--   [Contributors](#contributors)
--   [Contributing](#contributing)
--   [License](#license)
+- [Contributors](#contributors)
+- [Contributing](#contributing)
+- [License](#license)
 
 ---
 
@@ -25,7 +25,7 @@ OG-Open-Source is committed to developing and sharing innovative open-source sof
 ## Contributors
 
 <a href="https://github.com/OG-Open-Source/.github/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=OG-Open-Source/.github" />
+  <img src="https://contrib.rocks/image?repo=OG-Open-Source/.github" alt="Contributor list and icons for the OG-Open-Source/.github project"/>
 </a>
 
 ## Contributing
