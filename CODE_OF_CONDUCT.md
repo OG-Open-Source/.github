@@ -43,9 +43,16 @@ We agree to restrict the following behaviors in our community. Instances, threat
 
 Tensions can occur between community members even when they are trying their best to collaborate. Not every conflict represents a Code of Conduct violation, and this Code of Conduct reinforces encouraged behaviors and norms that can help avoid conflicts and minimize harm.
 
-When an incident does occur, it is important to report it promptly. To report a possible violation, contact the Community Moderators through CONTACT_CHANNEL.
+When an incident does occur, it is important to report it promptly. To report a possible violation, contact the Community Moderators through [ogata2025@gmail.com](mailto:ogata2025@gmail.com).
 
 Community Moderators take reports of violations seriously and will make every effort to respond in a timely manner. They will investigate all reports of Code of Conduct violations, reviewing messages, logs, and recordings, or interviewing witnesses and other participants. Community Moderators will keep investigation and enforcement actions as transparent as possible while prioritizing safety and confidentiality. In order to honor these values, enforcement actions are carried out in private with the involved parties, but communicating to the whole community may be part of a mutually agreed upon resolution.
+
+### Community Moderators and Conflicts of Interest
+
+Unless a repository explicitly designates a separate moderation team, **Community Moderators** are the active maintainers of the affected repository and/or the `OG-Open-Source` organization administrators.
+
+- **Recusal**: Any Community Moderator who is the subject of a report, the reporter, or otherwise has a direct conflict of interest **MUST** recuse themselves from investigating and deciding enforcement actions for that incident.
+- **Escalation**: If a report involves a repository maintainer or moderator, please note the conflict when writing to [ogata2025@gmail.com](mailto:ogata2025@gmail.com) so an uninvolved organization administrator can review the report independently. In single-maintainer volunteer repositories where no uninvolved moderator exists, independent escalation beyond the maintainer may not be available.
 
 ## Addressing and Repairing Harm
 

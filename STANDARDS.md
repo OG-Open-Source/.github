@@ -1,0 +1,160 @@
+# OG-Open-Source Repository & README Standard
+
+This document defines the management rules and standard `README.md` structure for repositories within the `OG-Open-Source` organization. A companion template for individual projects is provided in `/README_TEMPLATE.md`.
+
+## Terminology
+
+The key words "**MUST**", "**MUST NOT**", "**REQUIRED**", "**SHALL**", "**SHALL NOT**", "**SHOULD**", "**SHOULD NOT**", "**RECOMMENDED**", "**MAY**", and "**OPTIONAL**" in this document are to be interpreted as described in [BCP 14](https://www.rfc-editor.org/info/bcp14) ([RFC 2119](https://www.rfc-editor.org/rfc/rfc2119) and [RFC 8174](https://www.rfc-editor.org/rfc/rfc8174)) when, and only when, they appear in all capitals, as shown here.
+
+## Standard README Structure
+
+Every project's `/README.md` **SHOULD** include the following top-level sections, adapted to the nature of the project (library, CLI tool, web service, or specification):
+
+1. **Title & Introduction**: Project name, a concise one-sentence summary, and optional status badges.
+2. **Features**: Core capabilities, the specific problem solved, and key advantages or design trade-offs.
+3. **Installation & Usage**: Prerequisites, installation steps, and minimal runnable examples.
+4. **Contributing**: Links to the Code of Conduct, contribution workflow, and security reporting policy.
+5. **License & Acknowledgments**: License reference and contributor credits (linking to the project's own contributors graph rather than `.github`).
+
+## Rights, Licensing, and Liability
+
+### 1. License
+
+Every software repository in this organization **MUST** be released under the [ISC License](https://opensource.org/license/ISC) (`SPDX-License-Identifier: ISC`), recorded in `/LICENSE`, unless an explicit exception is approved by the repository maintainers (for example, documentation-only or dataset repositories, which **MAY** use [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) or [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)).
+
+Projects **MUST NOT** modify the text of the ISC License or attach custom legal restrictions to `/LICENSE`.
+
+- **Governance File Carve-Out**: Non-code community governance files adapted from upstream standards—specifically `/CODE_OF_CONDUCT.md` (adapted from Contributor Covenant 3.0 under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/))—retain their required upstream license solely for that file and do not affect the ISC licensing of the repository's software.
+- **Third-Party Components**: Third-party components retain their respective licenses as specified in [Third-Party Components](#third-party-components).
+
+### 2. Copyright Ownership and Contributor Warranty (DCO)
+
+`OG-Open-Source` operates strictly as an unincorporated, volunteer-run community namespace rather than a legal entity, publisher, or commercial vendor. It does not claim centralized copyright ownership over community-contributed works.
+
+- Copyright in each original contribution remains with its respective author(s).
+- The copyright notice in `/LICENSE` **SHOULD** be formatted as:
+
+  ```text
+  Copyright (c) <YEAR> <REPOSITORY_NAME> Contributors
+  ```
+
+  `<YEAR>` **SHOULD** record the year of first publication (creation year, e.g., `2026`). Updating the year annually is **NOT REQUIRED**; projects **MAY** optionally use a range (`<CREATION_YEAR>-<LAST_MODIFIED_YEAR>`) only when substantive modifications occur in a later year, and **SHOULD NOT** use open-ended placeholders such as `present`.
+
+### 3. Trademark and Name Protection (Non-Endorsement)
+
+The ISC License grants rights solely to the software code and grants **NO** rights to use the name `OG-Open-Source`, repository names, logos, or contributor identities for endorsement, promotion, or implied affiliation. Downstream users, forks, and derivative distributions **MUST NOT** represent modified versions as official `OG-Open-Source` releases.
+
+### 4. Disclaimer of Warranties, Support, and Liability
+
+Consistent with the ISC License, all software, documentation, and artifacts in this organization are provided strictly **"AS IS"**, without warranty of any kind, express or implied.
+
+- **No Duty of Maintenance or SLA**: Neither `OG-Open-Source` nor any project maintainer assumes any obligation to provide bug fixes, security patches, technical support, audits, or continued maintenance. Repositories **MAY** be archived or discontinued at any time without notice.
+- **Limitation of Liability**: To the fullest extent permitted by applicable law, in no event **SHALL** the authors, contributors, maintainers, or `OG-Open-Source` organizers be liable for any claim, direct, indirect, incidental, special, or consequential damages arising out of the use, inability to use, or performance of any repository.
+- **No Liability for Downstream or Third-Party Content**: Contributors and maintainers assume no liability for third-party dependencies, external links, downstream forks, or outputs generated by users or automated systems using these repositories.
+
+### 5. AI Use and Courtesy Attribution
+
+Any use of content from this organization—including for artificial intelligence training, evaluation, or generation—is governed solely by the ISC License (preserving the copyright and permission notices where copies or substantial portions are reproduced). Crediting the original repository and its contributors in AI-generated outputs is appreciated as community courtesy, without imposing additional legal obligations or liability on the authors.
+
+## Installation and Usage
+
+### Prerequisites
+
+Each repository **MUST** list its required operating systems/architectures (if constrained) and minimum supported runtime or toolchain versions (e.g., `Node.js >= 24.0`, `Python >= 3.12`). Projects **SHOULD NOT** manually duplicate exact transitive dependency versions in `/README.md`; dependency versions **MUST** be managed through the ecosystem's manifest file.
+
+### Installation
+
+Projects **SHOULD** document the primary installation method appropriate for end users (such as `npm install`, `pip install`, `cargo install`, container images, or pre-built binaries) as well as building from source:
+
+```bash
+git clone --recurse-submodules https://github.com/OG-Open-Source/<REPOSITORY_NAME>.git
+cd <REPOSITORY_NAME>
+```
+
+Repositories **MUST NOT** add `OG-Open-Source/.github` as a Git submodule at `/.github/`. Organization-wide community health files and reusable workflows are inherited natively via GitHub's organization `.github` repository, keeping each repository's `/.github/` directory available for its own workflows, Dependabot configs, and issue forms.
+
+### Third-Party Components
+
+1. **Package Managers**: Third-party libraries **SHOULD** be installed via the language ecosystem's package manager whenever available.
+   - Applications and deployable services **MUST** commit their package manager lock file.
+   - Reusable libraries and SDKs **SHOULD** follow the consensus convention of their language ecosystem regarding lock files.
+   - Packages managed by a package manager **SHOULD NOT** be committed to `/vendor/`, unless required by the ecosystem's standard workflow (e.g., `go mod vendor` for offline or reproducible builds).
+2. **Vendored Code (Without Package Manager)**: When no package manager provides a dependency, projects **SHOULD** vendor the source code into `/vendor/<COMPONENT_NAME>/` with its version/commit provenance recorded, rather than using Git submodules (as GitHub release source archives omit submodule contents). If a Git submodule is strictly necessary, add it directly to the target path:
+
+   ```bash
+   git submodule add <UPSTREAM_GIT_URL> vendor/<COMPONENT_NAME>
+   ```
+
+3. **License Retention and Attribution**:
+   - Any third-party component **committed directly to the repository** (such as code under `/vendor/`) **MUST** retain its original license file and copyright notices unmodified inside its directory.
+   - Dependencies resolved via a package manager and **not committed** to the repository are exempt from storing upstream license files in Git; however, any distributed binary, container image, or bundled artifact **MUST** include required third-party notices in accordance with upstream licenses.
+4. **License Compatibility (Deliverables vs. Development Tools)**:
+   - **Runtime, Linked, Imported, and Bundled Dependencies**: All third-party dependencies incorporated into the deliverable—whether statically linked, dynamically imported at runtime (e.g., via `pip`, `npm`, `Maven`, `Cargo`), or bundled into distribution artifacts—**MUST** use licenses compatible with the ISC License (such as ISC, MIT, BSD, Apache-2.0, or 0BSD). Strong copyleft dependencies (such as **GPL** or **AGPL**) **MUST NOT** be vendored, linked, imported, or bundled into ISC-licensed deliverables.
+   - **Development-Only Tools**: Standalone development, build, linting, formatting, or testing tools (e.g., external CLI utilities or `devDependencies` not imported into or distributed with the deliverable) are **exempt** from ISC compatibility requirements.
+
+### Usage
+
+Provide at least one minimal, reproducible example for each primary entry point—whether a CLI command, library API call, or service configuration—along with its expected output.
+
+## Contributing
+
+Repositories that accept external interactions (including issues, discussions, or pull requests) **MUST** enforce the organization's Code of Conduct and provide a security reporting channel.
+
+### Code of Conduct
+
+All participants **MUST** abide by the [Code of Conduct](https://github.com/OG-Open-Source/.github/blob/main/CODE_OF_CONDUCT.md), which adopts the [Contributor Covenant](https://www.contributor-covenant.org) version 3.0. Repositories **MAY** omit a local `/CODE_OF_CONDUCT.md` to inherit the organization default automatically. The enforcement contact method **MUST** be clearly stated in `CODE_OF_CONDUCT.md`.
+
+### Contribution Workflow
+
+To contribute to a repository:
+
+1. Fork the repository and create a feature branch.
+2. Make your changes and verify that all tests and linters pass.
+3. Sign off all commits using `git commit -s` to certify the [DCO](https://developercertificate.org/) (`Signed-off-by`), and follow the repository's commit convention, if any.
+   - Repositories accepting external pull requests **SHOULD** enforce DCO sign-off automatically via CI or the DCO GitHub App.
+   - Maintainers using squash or rebase merges **SHOULD** preserve `Signed-off-by` trailers in the resulting commit message.
+4. Open a pull request. Contributors **MUST** disclose **substantial AI-assisted code generation** in the PR description—defined as generating complete functions, modules, tests, or architectural logic using LLMs or coding agents, beyond routine IDE autocomplete or trivial syntax fixes. By submitting, the contributor confirms they have personally reviewed, tested, and assume full DCO responsibility for the code.
+
+### Security Reporting
+
+Every repository **SHOULD** enable GitHub Private Vulnerability Reporting and provide a `/SECURITY.md` (or inherit the organization default). Security vulnerabilities **MUST NOT** be reported in public issues.
+
+Reporting a vulnerability does not create an obligation or SLA for maintainers to provide a fix within a specific timeframe.
+
+## Development Guidelines
+
+- **Technical Standards**: Projects **SHOULD** adhere to widely accepted, publicly accessible technical standards (such as IETF RFCs, W3C, WHATWG, ECMA, POSIX, or Unicode). Where multiple specifications overlap, the active normative specification for that domain takes precedence (for example, WHATWG standards for browser web APIs, and active Internet Standards/BCPs over Informational or Historic RFCs).
+- **Commit Messages**: Commit messages **MAY** follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) version 1.0.0, unless a repository explicitly mandates it in its `CONTRIBUTING.md`.
+- **Changelogs**: Changes **SHOULD** be recorded in `/CHANGELOG.md` following [Keep a Changelog](https://keepachangelog.com/en/2.0.0/) version 2.0.0.
+- **Code Quality**: Source code **SHOULD** pass the project's configured linters, formatters, and automated tests before submission.
+- **Documentation & Encoding**:
+  - Documentation **MUST** be written in Markdown.
+  - All text-based source code and documentation files **MUST** be saved in UTF-8 encoding (without BOM) and **SHOULD** use LF (`\n`) line endings. Binary assets (such as images, fonts, and compiled test fixtures) are exempt from this rule.
+- **Special Filenames**: At the **repository root (`/`)** and in GitHub community health paths (`/.github/*.md`, `/profile/README.md`), standard documentation and governance Markdown files **MUST** use `UPPER_SNAKE_CASE.md` (e.g., `/README.md`, `/STANDARDS.md`, `/README_TEMPLATE.md`, `/CHANGELOG.md`, `/SECURITY.md`, `/CONTRIBUTING.md`, `/CODE_OF_CONDUCT.md`), with optional BCP 47 locale suffixes for translations (e.g., `/README.zh-Hant-TW.md`).
+  - Standard ecosystem files without `.md` or using established conventions—including `/LICENSE`, `/NOTICE`, `CODEOWNERS`, `CITATION.cff`, `AGENTS.md`, `llms.txt`, dotfiles (e.g., `.gitignore`, `.gitattributes`, `.editorconfig`), and `/.github/` YAML workflows or templates—are explicitly permitted.
+  - Subdirectories such as `/docs/`, `/examples/`, source directories, and test fixtures are **exempt** from the `UPPER_SNAKE_CASE.md` rule and **MAY** use `kebab-case.md` or ecosystem-specific naming conventions.
+
+## Versioning
+
+Each project **MUST** adopt exactly one of the following versioning schemes:
+
+1. **[Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html)** (**RECOMMENDED** for libraries, APIs, and CLI tools), e.g., `v1.2.3` or `v1.2.3-rc.1+build.42`.
+2. **Calendar Versioning (`YYYY.MM.DD` or `YYYY.MM.DD.N`)** (for applications, datasets, or rolling releases), where `.N` (`N >= 1`) is appended for multiple releases on the same UTC date, e.g., `2026.11.19` or `2026.11.19.1`.
+
+### Tag Format
+
+Every release Git tag **MUST** conform strictly to the chosen scheme's grammar (with an optional leading `v` if adopted consistently by the repository). Both single-package tags (e.g., `v1.2.3`, `2026.11.19`) and Monorepo package-scoped tags (e.g., `pkg/v1.2.3`, `sub/mod/v1.2.3`, `pkg@1.2.3`, `@scope/pkg@1.2.3`) are permitted, provided the tag matches the anchored pattern:
+
+```regex
+^(@?[a-zA-Z0-9][a-zA-Z0-9._-]*(?:/[a-zA-Z0-9][a-zA-Z0-9._-]*)*[@/])?[a-zA-Z0-9][a-zA-Z0-9.+_-]*$
+```
+
+Tags **MUST** pass `git check-ref-format` and **MUST NOT** contain consecutive dots (`..`), consecutive slashes (`//`), or `@{`, nor end with a dot (`.`) or slash (`/`).
+
+## Issue Reporting
+
+Repositories with GitHub Issues enabled **SHOULD** provide structured Issue Forms (`.github/ISSUE_TEMPLATE/*.yml`) rather than plain Markdown templates. Bug report forms **SHOULD** request:
+
+- Environment details (operating system, architecture, and runtime/package version).
+- Minimal steps or a reproducible example to trigger the issue.
+- Expected behavior versus actual behavior.
