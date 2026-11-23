@@ -3,12 +3,15 @@
 # About OG-Open-Source
 
 <p align="center">
-  <strong>Curating, Supporting, and Empowering Exceptional Open-Source Software.</strong>
+  <strong
+    >An unincorporated, volunteer-driven collective for open-source
+    software.</strong
+  >
 </p>
 
-[![Organization Standards](https://img.shields.io/badge/Standards-README-blue.svg)](https://github.com/OG-Open-Source/.github/blob/main/README.md)
+[![Organization Standards](https://img.shields.io/badge/Standards-STANDARDS.md-blue.svg)](https://github.com/OG-Open-Source/.github/blob/main/STANDARDS.md)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-3.0-4baaaa.svg)](https://github.com/OG-Open-Source/.github/blob/main/CODE_OF_CONDUCT.md)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/MIT)
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/license/ISC)
 
 </div>
 
@@ -16,56 +19,56 @@
 
 ## Introduction
 
-**OG-Open-Source** is an open-source collective and curation hub on GitHub dedicated to discovering, publishing, and sustaining high-quality software projects.
+**OG-Open-Source** is an unincorporated, volunteer-run open-source collective on GitHub. We provide a shared namespace, baseline governance, and consistent engineering conventions for community-developed software projects.
 
-We serve as an incubator and showcase for exceptional repositories. By obtaining permission to host and maintain standout projects under our organization, we provide developers with broader visibility, structured governance, and community-driven maintenance.
+### What We Focus On
 
-### What We Offer
-
-- **Community-Driven Maintenance**: Global collaboration ensuring projects remain active, secure, and maintained.
-- **High-Standard Curation**: Every repository adheres to standardized engineering, semantic versioning, and documentation discipline.
-- **Visibility & Recognition**: Greater outreach across the developer ecosystem while giving full attribution to original creators.
+- **Consistent Governance**: Repositories follow shared documentation, versioning, and dependency hygiene rules defined in our organization standards.
+- **Clear Licensing & IP Hygiene**: Projects use the permissive ISC License alongside DCO (`Signed-off-by`) certification to keep contributions clean and reusable.
+- **Best-Effort Collaboration**: Built by volunteer maintainers and community contributors on an "AS IS" basis without commercial lock-in.
 
 ---
 
 ## Our Standards
 
-Every repository hosted under OG-Open-Source must adhere to our organization-wide governance:
+Repositories hosted under `OG-Open-Source` follow our organization-wide governance:
 
-- **[OG-Open-Source README Standard](README_STANDARD.md)**: Standardized structure, modern dependency management, and clear technical documentation.
-- **[Code of Conduct (Contributor Covenant 3.0)](CODE_OF_CONDUCT.md)**: A safe, equitable, and restorative community environment.
-- **Licensing**: Projects maintained directly under our organization are unified under the [MIT License](https://opensource.org/license/MIT), reserving full right of attribution.
+- **[Repository & README Standard](https://github.com/OG-Open-Source/.github/blob/main/STANDARDS.md)**: Repository structure, dependency compatibility, versioning (SemVer 2.0.0 / CalVer), and DCO 1.1 workflow.
+- **[README Template](https://github.com/OG-Open-Source/.github/blob/main/README_TEMPLATE.md)**: Standard project `README.md` skeleton.
+- **[Code of Conduct (Contributor Covenant 3.0)](https://github.com/OG-Open-Source/.github/blob/main/CODE_OF_CONDUCT.md)**: Community behavior standards, moderation, and reporting channels.
+- **[Security Policy](https://github.com/OG-Open-Source/.github/blob/main/SECURITY.md)**: Coordinated private vulnerability reporting guidelines.
+- **Licensing**: Software repositories are licensed under the [ISC License](https://opensource.org/license/ISC), with contributions certified under the [Developer Certificate of Origin (DCO) 1.1](https://developercertificate.org/).
 
 ---
 
 ## How to Join Us
 
-We are always looking for exceptional repositories and passionate maintainers to join our collective.
+### 1. Submit a Project
 
-### 1. Submit Your Project for Hosting
+If you would like to host or collaborate on a project within `OG-Open-Source`:
 
-If you have created an innovative project and want it to be featured or maintained within OG-Open-Source:
-
-1. Review our **[README Standard](README_STANDARD.md)** to ensure compatibility.
-2. Open an onboarding proposal by submitting a **[Repository Transfer / Hosting Request](https://github.com/OG-Open-Source/.github/issues/new?template=project_submission.md)**.
-3. Our team will review the repository architecture and communicate next steps with you.
+1. Review our **[Repository & README Standard](https://github.com/OG-Open-Source/.github/blob/main/STANDARDS.md)** to ensure license (ISC) and dependency compatibility.
+2. Open a proposal in our **[.github issues](https://github.com/OG-Open-Source/.github/issues/new/choose)**.
+3. Maintainers will review the proposal on a best-effort basis and discuss next steps.
 
 ### 2. Contribute to Existing Projects
 
-We welcome contributors of all backgrounds. Pick any repository under our organization, check out its open issues, and follow its local `CONTRIBUTING.md` to submit a Pull Request.
+Contributions are welcome across all active repositories. Check the project's `README.md` (and local `CONTRIBUTING.md`, if present), sign off your commits with `git commit -s` (DCO), and abide by our Code of Conduct.
 
 ---
 
 ## Contact & Community
 
-Have questions, suggestions, or want to collaborate? Please reach out through our public GitHub channels:
-
 - **General Discussions**: Start a thread on [OG-Open-Source Discussions](https://github.com/orgs/OG-Open-Source/discussions).
-- **Organization Inquiries**: Open an issue in our [.github repository](https://github.com/OG-Open-Source/.github/issues/new).
+- **Organization Inquiries**: Open an issue in the [.github repository](https://github.com/OG-Open-Source/.github/issues/new/choose).
+- **Security Vulnerabilities**: Report privately via each repository's **Security** tab (see [SECURITY.md](https://github.com/OG-Open-Source/.github/blob/main/SECURITY.md)).
 - **GitHub Organization**: [github.com/OG-Open-Source](https://github.com/OG-Open-Source)
 
 ---
 
 <div align="center">
-  <sub>© 2026 <a href="https://github.com/OG-Open-Source">OG-Open-Source</a>. Content in this organization reserves the right of attribution.</sub>
+  <sub
+    >An unincorporated volunteer collective. Software is provided "AS IS" under
+    the <a href="https://opensource.org/license/ISC">ISC License</a>.</sub
+  >
 </div>
